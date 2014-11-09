@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    >
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:drawingCacheQuality="high"
+	    android:background="@drawable/main_menu_item" 
+	    android:orientation="horizontal" 
+	    android:id="@+id/menu_item"
+	    android:padding="5dp"
+	    >
+	    <!-- 
+	    android:minHeight="70.0dip"
+	     -->
+	    <ImageView
+	        android:id="@+id/sItemIcon"
+	        android:layout_width="54.0dip"
+	        android:layout_height="54.0dip"
+	        android:background="@drawable/main_menu_item_bg"
+	        android:padding="2.0dip"
+	        android:layout_margin="5dp"
+	        android:scaleType="fitXY" 
+	        android:layout_centerVertical="true"
+	        />
+	
+	    <!-- 
+	    android:layout_margin="10.0dip"
+	     -->
+	    <TextView
+	        android:text=""
+	        android:id="@+id/sItemTitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@id/sItemIcon"
+	        android:layout_toRightOf="@id/sItemIcon"
+	        android:textColor="#ff23323b"
+	        
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        />
+	
+	    <!--
+	    android:gravity="center_vertical"
+	    android:textSize="18.0sp"  
+	    android:singleLine="true"
+	     -->
+	    
+	    <TextView
+	        android:text=""
+	        android:id="@+id/sItemInfo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/sItemTitle"
+	        android:layout_toRightOf="@id/sItemIcon"
+	        android:textColor="#ff848f9b"
+	        />
+	
+	    <!-- 
+	    	android:gravity="center_vertical"
+	        android:textSize="13.0sp" 
+	        android:singleLine="true"
+	        android:ellipsize="marquee"
+	     -->
+	</RelativeLayout> 
+</FrameLayout>
+
+
+

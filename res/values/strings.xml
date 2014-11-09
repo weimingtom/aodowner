@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AodownerActivity!</string>
+    <string name="app_name">青空书签</string>
+	
+    <string name="mail_address">weimingtom@qq.com</string>
+    <string name="version_number">1.0</string>
+    <string name="about_message">
+	青空书签\n
+	版本：1.0\n
+\n
+一、使用说明：\n
+1. 下载解压的文件保存在/sdcard/aodowner目录下。\n
+\n
+二、目前的问题：\n
+\n
+\n
+三、更新日志：\n
+◆v1.0更新日志：\n
+★首次上传。\n
+★作品搜索。\n
+（内部版本号1，2013/1/28）\n
+\n
+\n
+四、鸣谢和引用资源：\n
+1. 電子テキストのある場所\n
+http://www.aozora.gr.jp/denshitext/denshitext.html\n
+\n
+2. テキスト版 アクセスランキング (2012.01.01 - 2012.12.31)\n
+http://www.aozora.gr.jp/access_ranking/2012_txt.html\n
+\n
+3. 公開中　作家別作品一覧拡充版：全て(CSV形式、zip圧縮）\n
+http://www.aozora.gr.jp/index_pages/person_all.html\n 
+\n
+\n
+五、联系方式：\n
+Author：weimingtom\n
+Blog：http://hi.baidu.com/new/weimingtom_\n
+Email：weimingtom@qq.com\n
+	</string>
+    
+</resources>

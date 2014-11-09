@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar_bg"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        >
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="12.0sp"
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+	        
+		<ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    >
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        >
+
+				<TextView
+				    android:id="@+id/textViewInfo"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:text=""
+				    android:padding="5dp"
+				    android:textColor="#000000"
+				    />
+		        				
+				<TextView
+				    android:id="@+id/textViewLog"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:text=""
+				    android:padding="5dp"
+				    android:textColor="#000000"
+				    />
+				
+		    </LinearLayout>
+		</ScrollView> 
+
+		<LinearLayout
+		    android:id="@+id/linearLayoutProgress"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:orientation="vertical"
+		    android:gravity="center_horizontal"
+		    >
+			<TextView
+			    android:id="@+id/textViewPercent"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="0%"
+			    android:textColor="#000000"
+			    />
+			<ProgressBar
+			    android:id="@+id/progressBarDownload"
+			    style="?android:attr/progressBarStyleHorizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:padding="5dp"
+			    />
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_margin="5dp"
+		    >
+			<Button
+			    android:id="@+id/buttonBeginDownload"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:background="@drawable/btn"
+			    android:padding="5dp"
+			    android:text="开始下载" /> 
+
+			<Button
+			    android:id="@+id/buttonOpenWeb"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:background="@drawable/btn"
+			    android:padding="5dp"
+			    android:text="网页版" /> 
+			
+			<Button
+			    android:id="@+id/buttonClearLog"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:background="@drawable/btn"
+			    android:padding="5dp"
+			    android:text="清空日志" /> 
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

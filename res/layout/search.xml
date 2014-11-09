@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar_bg"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="12.0sp"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+	    >
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        >
+	        <Spinner
+	            android:id="@+id/spinnerSearchType"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" 
+	            />
+	
+	        <Button
+	            android:id="@+id/buttonSearch"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="搜索" 
+	            />
+	   </LinearLayout>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/viewBookList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:fastScrollEnabled="true"
+            >
+        </ListView>
+	    
+	    <TextView 
+	        android:id="@+id/textViewLoading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="数据加载中..."
+	        android:gravity="center"
+	        android:textColor="#000000"
+	        android:visibility="invisible"
+	        />
+	 </RelativeLayout>
+</LinearLayout>
